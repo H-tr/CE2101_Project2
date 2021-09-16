@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.8}
+\title{Analysis of Dijkstra's Algorithm}
+\author{Hu Tianrun}
+\date{\today}
+\begin{document}
+	\maketitle
+	\newpage
+	\section{Definitions, Assumptions and Lemmas}
+	\subsection{Shortest-path weight definition}
+	In a \textbf{shortest-paths problem}, we are given a weighted, directed graph $ G = (V, E) $, with function $ w = E \rightarrow \mathbb{R} $ mapping edges to real-valued weights.
+	
+	We define the \textbf{shortest-path weight} $ \delta(u, v) $ from $ u $ to $ v $,
+	\[ \delta(u,v) = \left\{\begin{aligned}
+			&\text{min}\{w(p):u \stackrel{p}{\rightsquigarrow} v \}\quad &\text{if there is a path from $ u $ to $ v $},\\
+			&\infty &\text{otherwise}.
+		\end{aligned}
+		\right. \]
+	\subsection{Optimal substructure of a shortest path}
+	\paragraph{Lemma} Given a weighted, directed graph $ G = (V, E) $ with weight function $ w = E \rightarrow \mathbb{R} $, let $ p = \langle v_0, v_1, \dots, v_k \rangle $ be a shortest path from vertex $ v_0 $ to vertex $ v_k $ and, for any $ i $ and $ j $ such that $ 0 \leq i \leq j \leq k $, let $ p_{ij} = \langle v_i, v_{i+1}, \dots, v_j\rangle $ be the subpath of $ p $ from vertex $ v_i $ to vertex $ v_j $. Then, $ p_{ij} $ is a shortest path from $ v_i $ to $ v_j $.
+	\paragraph{Proof} If $ p_{ij} $ is not the shortest path, we can replace it by shortest path to build a shorter path from $ v_0 $ to $ v_k $ which lead to a contradiction.
+	\subsection{Representing shortest paths}
+	Given a graph $ G = (V, E) $, we build a new array $ parent $ to note the parent for each vertex in $ G $. Thus, we can define a function printPath(s, v) to print the shortest path from $ s $ to $ v $.
+	
+	
+\end{document}
