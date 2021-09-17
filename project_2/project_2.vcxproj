@@ -139,9 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BruteForceQueue.cpp" />
-    <ClCompile Include="Dijkstra.cpp" />
-    <ClCompile Include="heapQueue.cpp" />
     <ClCompile Include="project_2.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -26,7 +26,7 @@ int main() {
     Dijkstra* G = new Dijkstra(v, e);  // create a new class to test algorithm
 
     // If we want to check the graph
-    G->printGraph();
+    //G->printGraph();
 
 
     cout << endl;
@@ -34,7 +34,7 @@ int main() {
     cout << "Following is the Dijkstra algorithm using adjacency graph and brute force queue" << endl;
     start = clock();
     for (int i = 1; i < v; ++i) {
-        cout << "The path to vertex " << i << " is: " << endl;
+       // cout << "The path to vertex " << i << " is: " << endl;
         G->Dijkstra_a_brute(i);
     }
     end = clock();
@@ -44,7 +44,7 @@ int main() {
     cout << "Following is the Dijkstra algorithm using adjacency graph and heap queue" << endl;
     start = clock();
     for (int i = 1; i < v; ++i) {
-        cout << "The path to vertex " << i << " is: " << endl;
+        //cout << "The path to vertex " << i << " is: " << endl;
         G->Dijkstra_a_heap(i);
     }
     end = clock();
@@ -54,7 +54,7 @@ int main() {
     cout << "Following is the Dijkstra algorithm using matrix graph and brute force queue" << endl;
     start = clock();
     for (int i = 1; i < v; ++i) {
-        cout << "The path to vertex " << i << " is: " << endl;
+        //cout << "The path to vertex " << i << " is: " << endl;
         G->Dijkstra_m_brute(i);
     }
     end = clock();
@@ -64,7 +64,7 @@ int main() {
     cout << "Following is the Dijkstra algorithm using matrix graph and heap queue" << endl;
     start = clock();
     for (int i = 1; i < v; ++i) {
-        cout << "The path to vertex " << i << " is: " << endl;
+        //cout << "The path to vertex " << i << " is: " << endl;
         G->Dijkstra_m_heap(i);
     }
     end = clock();

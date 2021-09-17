@@ -10,7 +10,7 @@ public:
 	virtual bool empty() = 0;
 	virtual void add(int n) = 0;
 protected:
-	int _queue[1000] = { 0 };
+	int _queue[100000] = { 0 };
 	int* _dis;
 	int size;
 };
