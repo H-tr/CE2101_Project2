@@ -130,13 +130,6 @@ int extractCheapest(int n, int Q[], int d[])
         Q[size-1] = NULL;
     }
 
-    for (int c = 0; c < size - 1; c++)
-    {
-        printf("%d\n", Q[c]);
-    }
-
-
-
     return smallest;
 
 }
