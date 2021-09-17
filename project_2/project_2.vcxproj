@@ -139,11 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BruteForceQueue.cpp" />
     <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="heapQueue.cpp" />
     <ClCompile Include="project_2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BruteForceQueue.h" />
     <ClInclude Include="Dijkstra.h" />
+    <ClInclude Include="heapQueue.h" />
+    <ClInclude Include="priorityQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

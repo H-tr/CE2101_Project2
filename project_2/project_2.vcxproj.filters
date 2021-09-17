@@ -21,9 +21,24 @@
     <ClCompile Include="Dijkstra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BruteForceQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="heapQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="priorityQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BruteForceQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="heapQueue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
