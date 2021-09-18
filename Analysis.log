@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.14)  14 SEP 2021 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.14)  18 SEP 2021 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -381,51 +381,37 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
 
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
+ [1
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (3.6225pt too wide) in paragraph at lines 26--27
- []\OT1/cmr/bx/n/10 Lemma[] \OT1/cmr/m/n/10 Given a weighted, di-rected graph $
-\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 V; E\OT1/cmr/m/n/10 )$ w
-ith weight func-tion $\OML/cmm/m/it/10 w \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 E \
-OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R$\OT1/cmr/m/n/10 , let $\OML/cmm/m/it/10 p \OT
-1/cmr/m/n/10 = \OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 v[]; v[]; [] ; v[]\OMS/cmsy/m
-/n/10 i$
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./Analysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `Analysis.out' has not changed.
-(rerunfilecheck)             Checksum: 3E531912FBF757F5355A42CA05165C71;314.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
  ) 
 Here is how much of TeX's memory you used:
- 6794 strings out of 480608
- 99445 string characters out of 5907535
- 366945 words of memory out of 5000000
- 22564 multiletter control sequences out of 15000+600000
- 540201 words of font info for 55 fonts, out of 8000000 for 9000
+ 6776 strings out of 480608
+ 99232 string characters out of 5907535
+ 366974 words of memory out of 5000000
+ 22555 multiletter control sequences out of 15000+600000
+ 538981 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,13n,31p,509b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
-.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Analysis.pdf (2 pages, 118119 bytes).
+ 34i,6n,31p,688b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb>
+Output written on Analysis.pdf (1 page, 71956 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 37 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
