@@ -18,15 +18,6 @@
     <ClCompile Include="project_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dijkstra.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BruteForceQueue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="heapQueue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra.h">

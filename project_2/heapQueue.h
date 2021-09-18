@@ -13,7 +13,7 @@ private:
 	int left(int i);
 	int right(int i);
 	int par(int i);
-	int index[1000] = { 0 };
+	int index[100000] = { 0 };
 	void heapify(int i);
 	void modify(int i);
 };

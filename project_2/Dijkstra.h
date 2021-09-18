@@ -7,19 +7,17 @@
 #include "priorityQueue.h"
 #include "BruteForceQueue.h"
 #include "heapQueue.h"
-#define max_size 1000
+#define max_size 2000
 
 class vertex {
 public:
-    vertex(int i, int d, int p, vertex* n) {
+    vertex(int i, int d, vertex* n) {
         index = i;
         weight = d;
-        parent = p;
         next = n;
     }
     int index;
     int weight;
-    int parent;
     vertex* next;
 };
 
@@ -124,8 +122,8 @@ inline void Dijkstra::Dijkstra_a_brute(int terminal)
         }
     }
 
-    printPath(terminal);
-    std::cout << " The shortest distance is: " << dis[terminal] << std::endl;
+    //printPath(terminal);
+    //std::cout << " The shortest distance is: " << dis[terminal] << std::endl;
 }
 
 inline void Dijkstra::Dijkstra_a_heap(int terminal)
@@ -153,8 +151,8 @@ inline void Dijkstra::Dijkstra_a_heap(int terminal)
         }
     }
 
-    printPath(terminal);
-    std::cout << " The shortest distance is: " << dis[terminal] << std::endl;
+    //printPath(terminal);
+    //std::cout << " The shortest distance is: " << dis[terminal] << std::endl;
 }
 
 inline void Dijkstra::Dijkstra_m_brute(int terminal)
@@ -181,8 +179,8 @@ inline void Dijkstra::Dijkstra_m_brute(int terminal)
         }
     }
 
-    printPath(terminal);
-    std::cout << " The shortest distance is: " << dis[terminal] << std::endl;
+    //printPath(terminal);
+    //std::cout << " The shortest distance is: " << dis[terminal] << std::endl;
 }
 
 inline void Dijkstra::Dijkstra_m_heap(int terminal)
@@ -210,8 +208,8 @@ inline void Dijkstra::Dijkstra_m_heap(int terminal)
         }
     }
 
-    printPath(terminal);
-    std::cout << " The shortest distance is: " << dis[terminal] << std::endl;
+    //printPath(terminal);
+    //std::cout << " The shortest distance is: " << dis[terminal] << std::endl;
 }
 
 inline void Dijkstra::dfs(int s)
@@ -251,12 +249,12 @@ inline void Dijkstra::randGen()
         for (int j = 0; j < _v; ++j) {
             if (_graph_m[i][j]) {
                 if (!_graph_a[i])
-                    _graph_a[i] = new vertex(j, _graph_m[i][j], -1, NULL);
+                    _graph_a[i] = new vertex(j, _graph_m[i][j], NULL);
                 else {
                     vertex* cur = _graph_a[i];
                     while (cur->next)
                         cur = cur->next;
-                    cur->next = new vertex(j, _graph_m[i][j], -1, NULL);
+                    cur->next = new vertex(j, _graph_m[i][j], NULL);
                 }
             }
         }

@@ -7,26 +7,19 @@
 \usepackage{geometry}
 \geometry{a4paper,scale=0.8}
 \title{Analysis of Dijkstra's Algorithm}
-\author{Hu Tianrun}
+\author{Hu Tianrun, Ian Chan Jiajun, Kelvin Pang Junwei}
 \date{\today}
 \begin{document}
 	\maketitle
-	\newpage
-	\section{Definitions, Assumptions and Lemmas}
-	\subsection{Shortest-path weight definition}
-	In a \textbf{shortest-paths problem}, we are given a weighted, directed graph $ G = (V, E) $, with function $ w = E \rightarrow \mathbb{R} $ mapping edges to real-valued weights.
+	The Dijkstra's algorithm maintains the min-priority queue $ Q $ by calling three priority-queue operations: $ ADD, POP $, and $ MAINTAIN $. The algorithm calls both $ ADD $ and $ POP $ once per vertex. Because each vertex $ u \in V $ is added to set $ S $ exactly once, each edge in the graph is examined in the loop exactly once during the course of the algorithm. For the adjacency list graph, since the total number of edges in all the adjacency lists is $ |E| $, this loop iterates a total of $ |E| $ times, and thus the algorithm calls $ MAINTAIN $ at most $ |E| $ times overall.
 	
-	We define the \textbf{shortest-path weight} $ \delta(u, v) $ from $ u $ to $ v $,
-	\[ \delta(u,v) = \left\{\begin{aligned}
-			&\text{min}\{w(p):u \stackrel{p}{\rightsquigarrow} v \}\quad &\text{if there is a path from $ u $ to $ v $},\\
-			&\infty &\text{otherwise}.
-		\end{aligned}
-		\right. \]
-	\subsection{Optimal substructure of a shortest path}
-	\paragraph{Lemma} Given a weighted, directed graph $ G = (V, E) $ with weight function $ w = E \rightarrow \mathbb{R} $, let $ p = \langle v_0, v_1, \dots, v_k \rangle $ be a shortest path from vertex $ v_0 $ to vertex $ v_k $ and, for any $ i $ and $ j $ such that $ 0 \leq i \leq j \leq k $, let $ p_{ij} = \langle v_i, v_{i+1}, \dots, v_j\rangle $ be the subpath of $ p $ from vertex $ v_i $ to vertex $ v_j $. Then, $ p_{ij} $ is a shortest path from $ v_i $ to $ v_j $.
-	\paragraph{Proof} If $ p_{ij} $ is not the shortest path, we can replace it by shortest path to build a shorter path from $ v_0 $ to $ v_k $ which lead to a contradiction.
-	\subsection{Representing shortest paths}
-	Given a graph $ G = (V, E) $, we build a new array $ parent $ to note the parent for each vertex in $ G $. Thus, we can define a function printPath(s, v) to print the shortest path from $ s $ to $ v $.
+	The running time of Dijkstra's algorithm depends on how we implement the min-priority queue and graph. In this project, I implement graph by adjacency list and matrix, and combine them with heap priority queue and array queue respectively.
+	
+	Consider first the case in which we using array as queue, maintaining the min-priority queue by taking advantage of the vertices being numbered 1 to $ |V| $. We simply store distance of each $ v $ in an array. Each $ ADD $ operation takes $ O(1) $ time and $ POP $ operation takes $ O(|V|) $ times. For this case, there is no need to have a $ MAINTAIN $ function, in another word, the $ MAINTAIN $ function is combined with $ POP $ function. The time complexity for matrix with array queue is $ O(|V|^2 + |V|^2) = O(|V|^2) $. The time complexity for adjacency list with array queue is $ O(|V|^2 + |E|) = O(|V|^2) $. 
+	
+	We can improve the algorithm by implementing the min-priority queue with a min-heap. Each time we add a vertex into queue, we need to call $ MAINTAIN $ function to maintain the queue. And each time we pop the vertex, we need to call $ HEAPIFY $ function to keep heap property. Both $ MAINTAIN $ and $ HEAPIFY $ take $ O(\lg |V|) $ time. What's more, every time we change the distance of a vertex, we need to call $ MINTAIN $ function to maintain the heap that at most have $ |E| $ times. For the adjacency list graph, the time complexity is $ O((2|V|+|E|)\lg |V|) $, and for the matrix list graph, the time is $ O((2|V|+|E|\lg |V| + |E|) = O((2|V|+|E|)\lg |V|) $
+	
+	For conclusion, we can see that the asymptotic time for matrix graph and adjacency are always the same and using min-heap is asymptotically better than array priority queue. However they still have difference performances in different cases by some constant times. This part will be shown in our data analysis.
 	
 	
 \end{document}
